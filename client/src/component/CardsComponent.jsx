@@ -27,6 +27,7 @@ const CardsComponent = () => {
       price: "40",
     },
   ];
+//   helloooooooooooooooooo
 
   return (
     <div
