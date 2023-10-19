@@ -1,12 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { HiMenu } from "react-icons/hi";
 import Sidebar from "./Sidebar";
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 import { toggleSidebar } from "../redux/reducer/togglesidebar";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Header = () => {
+
+  useEffect(() => {
+    AOS.init({
+      once: true,
+    });
+  }, []);
+
   const dispatch = useDispatch();
   const sidebarisOpen = useSelector((state) => state.sidebar.isOpen);
   console.log(sidebarisOpen, "+++++++++++++++++++++++");
@@ -15,7 +24,11 @@ const Header = () => {
   };
 
   return (
-    <div className="container mx-auto px-5 xl:px-4 2xl:px-4 sm:px-3 flex justify-between items-center py-8">
+    <div className="container mx-auto px-5 xl:px-4 2xl:px-4 sm:px-3 flex justify-between items-center py-8"
+      data-aos="fade-down"
+       data-aos-offset="300"
+       data-aos-easing="ease-in-sine"
+       data-aos-duration="1000">
       <div>
         <Link to="/">
             <h1 className="text-4xl font-bold font-serif">Nifty</h1>
@@ -28,7 +41,7 @@ const Header = () => {
               <Link to="/">Home</Link>
             </li>
             <li className="">
-              <Link to="/mint">Mint</Link>
+              <Link to="/about">About</Link>
             </li>
             <li>
               <Link to="/about">Update</Link>

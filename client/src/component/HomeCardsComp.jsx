@@ -3,7 +3,7 @@ import { FaEthereum } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const CardsComponent = () => {
+const HomeCardsComp = () => {
   useEffect(() => {
     AOS.init({
       once: true,
@@ -27,7 +27,6 @@ const CardsComponent = () => {
       price: "40",
     },
   ];
-//   helloooooooooooooooooo
 
   return (
     <div
@@ -55,4 +54,4 @@ const CardsComponent = () => {
   );
 };
 
-export default CardsComponent;
+export default HomeCardsComp;
