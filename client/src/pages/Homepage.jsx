@@ -15,13 +15,13 @@ const Homepage = () => {
         <HomePageDetails />
         <HomeCardsComp />  
       </div>
-      <div className="container mx-auto px-5 xl:px-4 2xl:px-4 sm:px-3">
+      <div className="">
         <HomeExploreNft />
       </div>
-      <div className="container mx-auto px-5 xl:px-4 2xl:px-4 sm:px-3">
+      <div className="bg-gradient-to-r from-[#d6ebdc] to-[#f6d8c8] via-[#dfe8dd] via-[#e6e8dc] via-[#eae8dd] via-[#f0dece] md:bg-gradient-to-b dsm:bg-gradient-to-b">
         <HomeCreateSellComp />
       </div>
-      <div className="bg-gradient-to-r from-[#d6ebdc] to-[#f6d8c8] via-[#dfe8dd] via-[#e6e8dc] via-[#eae8dd] via-[#f0dece] md:bg-gradient-to-b dsm:bg-gradient-to-b">
+      <div className="">
         <ListsinFooter />
       </div>
     </div>

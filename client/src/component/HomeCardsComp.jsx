@@ -41,9 +41,9 @@ const HomeCardsComp = () => {
           <div>
             <img src={item.imageUrl} alt="" />
           </div>
-          <div className="py-3 text-center">
-            <h1 className="text-[#505072]">{item.Name}</h1>
-            <p className="text-[36px] font-semibold">{item.price}ETH</p>
+          <div className="py-3 text-center flex flex-col gap-1">
+            <p className="text-[#505072]">{item.Name}</p>
+            <h1 className="text-[36px]">{item.price}ETH</h1>
             <p className="text-2xl flex justify-center">
               <FaEthereum />
             </p>

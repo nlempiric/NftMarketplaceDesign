@@ -18,7 +18,7 @@ const HomePageDetails = () => {
       data-aos-duration="1000"
     >
       <div className="px-24 text-center dsm:px-0 md:px-0 xl:px-6 lg:px-5">
-        <h1 className=" text-[35px] 2xl:text-[65px] xl:text-[60px] lg:text-[58px] md:text-[55px] sm:text-[30px] font-medium ">
+        <h1 className=" text-[35px] 2xl:text-[65px] xl:text-[60px] lg:text-[58px] md:text-[55px] sm:text-[30px] ">
           Discover Rare Digital Art and Collect NFT
         </h1>
       </div>
@@ -30,7 +30,7 @@ const HomePageDetails = () => {
       </div>
       <div className="text-lg py-4">
         <button className="px-10 py-3 border border-1 border-gray-400 rounded-md text-[#050515] hover:bg-[#050515] hover:text-white">
-          Explore Now
+          <h3>Explore Now</h3>
         </button>
       </div>
     </div>

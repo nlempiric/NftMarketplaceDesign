@@ -46,7 +46,7 @@ const HomeExploreNft = () => {
 
   return (
     <>    
-    <div className="my-32">
+    <div className="container mx-auto px-5 xl:px-4 2xl:px-4 sm:px-3 my-32 font">
         <h1 className="text-4xl font-semibold my-12">Explore NFTs</h1>
         <div className="grid grid-cols-1 2xl:grid-cols-3 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 gap-8 "  
             data-aos="fade-up"
@@ -60,12 +60,12 @@ const HomeExploreNft = () => {
                 <div>
                     <img src={items.imageUrl} alt="" />
                 </div>
-                <div className="py-3 self-center 2xl:self-start ">
-                    <h1 className="text-[22px] font-semibold">{items.Name} </h1>
-                    <p className="text-[20px] font-medium flex items-center">
+                <div className="py-3 self-center 2xl:self-start flex flex-col gap-1">
+                    <h1 className="text-[22px] ">{items.Name} </h1>
+                    <h2 className="text-[20px] flex items-center">
                         <span><FaEthereum /></span>
                         <span>{items.price} ETH</span>
-                    </p>
+                    </h2>
                 </div>
                     </div>
             ))}
